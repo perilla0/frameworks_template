@@ -62,9 +62,11 @@ services:
     depends_on:
       - react-ts.client.apollo.app.frontend
       - ts.next.app.frontend
+      - ts.nuxt.app.frontend
     ports:
       - 443:443
       - 8010:8010
+      - 8020:8020
     networks:
       default:
 
@@ -262,7 +264,7 @@ services:
       - type: bind
         source: ./src/ts.nuxt.app.frontend
         target: /home/node/app
-    command: "npm run dev -- --hostname 0.0.0.0 --port 4020"
+    command: "npm run dev -- --host 0.0.0.0 --port 4020"
     networks:
       default:
     # ports:
