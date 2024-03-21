@@ -2,7 +2,7 @@
 cd `dirname $0`
 cd ../../
 
-for filename in ./script/init/build.services/*.sh
+for filename in ./script/init/create.services/*.sh
 do
     echo '#------------------------------------------------------------------------------------'
     echo '# filename:' ${filename}

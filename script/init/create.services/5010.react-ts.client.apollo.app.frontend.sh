@@ -19,5 +19,5 @@ npm install @apollo/client graphql
 cp ./src/${DC_SERRVICE_NAME}/src/main.tsx ./src/${DC_SERRVICE_NAME}/src/main.origin.tsx
 cp ./src/${DC_SERRVICE_NAME}/src/App.tsx ./src/${DC_SERRVICE_NAME}/src/App.origin.tsx
 # 差し替え
-cp ./script/init/copy/${DC_SERRVICE_NAME}/main.tsx ./src/${DC_SERRVICE_NAME}/src/main.tsx
-cp ./script/init/copy/${DC_SERRVICE_NAME}/App.tsx ./src/${DC_SERRVICE_NAME}/src/App.tsx
+cp ./script/init/create.services/copy.files/${DC_SERRVICE_NAME}/main.tsx ./src/${DC_SERRVICE_NAME}/src/main.tsx
+cp ./script/init/create.services/copy.files/${DC_SERRVICE_NAME}/App.tsx ./src/${DC_SERRVICE_NAME}/src/App.tsx
