@@ -93,7 +93,7 @@ cd script/init/
 
 | サービス名 | ツール名 | Docker Hub | ポート番号 | 説明  |
 | :--- | :--- | :--- | :--- | :--- |
-| react-ts.client.apollo.app.frontend | [Apollo Client](https://www.apollographql.com/docs/react/) | [node](https://hub.docker.com/_/node) | [80](https://localhost) | [GraphQL](https://graphql.org/) |
+| react-ts.client.apollo.app.frontend | [Apollo Client](https://www.apollographql.com/docs/react/) | [node](https://hub.docker.com/_/node) | [443](https://localhost) | [GraphQL](https://graphql.org/) |
 | ts.next.app.frontend | [Next.js](https://nextjs.org/) | [node](https://hub.docker.com/_/node) | [8010](https://localhost:8010) | [React](https://ja.react.dev/blog/2023/03/16/introducing-react-dev) |
 | ts.nuxt.app.frontend | [Nuxt.js](https://nuxt.com/) | [node](https://hub.docker.com/_/node) | [8020](https://localhost:8020) | [Vue.js](https://ja.vuejs.org/) |
 
