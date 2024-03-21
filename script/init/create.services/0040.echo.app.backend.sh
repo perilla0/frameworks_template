@@ -17,4 +17,4 @@ go mod init app
 go get github.com/labstack/echo/v4
 "
 
-cp ./script/init/copy/${DC_SERRVICE_NAME}/server.go ./src/${DC_SERRVICE_NAME}/server.go
+cp ./script/init/create.services/copy.files/${DC_SERRVICE_NAME}/server.go ./src/${DC_SERRVICE_NAME}/server.go

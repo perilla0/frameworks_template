@@ -21,7 +21,7 @@ php artisan horizon:install
 "
 
 # 環境ファイルを差し替える
-cp ./script/init/copy/${DC_SERRVICE_NAME}/.env.local ./src/${DC_SERRVICE_NAME}/.env
+cp ./script/init/create.services/copy.files/${DC_SERRVICE_NAME}/.env.local ./src/${DC_SERRVICE_NAME}/.env
 
 # .envのAPP_KEYを変更する
 docker compose run -u $(id -u):$(id -g) --rm ${DC_SERRVICE_NAME} bash -c "
