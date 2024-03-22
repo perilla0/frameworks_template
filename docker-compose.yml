@@ -63,10 +63,13 @@ services:
       - react-ts.client.apollo.app.frontend
       - ts.next.app.frontend
       - ts.nuxt.app.frontend
+      - kit.svelte.app.frontend
     ports:
+      - 80:80
       - 443:443
       - 8010:8010
       - 8020:8020
+      - 8030:8030
     networks:
       default:
 
@@ -269,6 +272,26 @@ services:
       default:
     # ports:
     #   - 4020:4020
+
+  kit.svelte.app.frontend:
+    container_name: kit.svelte.app.frontend
+    hostname: kit.svelte.app.frontend
+    image: ${PROJECT_NAME}_kit.svelte.app.frontend
+    build:
+      context: ./docker/kit.svelte.app.frontend
+      dockerfile: Dockerfile
+    environment:
+      TZ: ${TZ}
+      NODE_ENV: development
+    volumes:
+      - type: bind
+        source: ./src/kit.svelte.app.frontend
+        target: /home/node/app
+    command: "npm run dev -- --host 0.0.0.0 --port 4030"
+    networks:
+      default:
+    # ports:
+    #   - 4030:4030
 
 # ------------------------------------------------------------------------------------------------------
 # db
