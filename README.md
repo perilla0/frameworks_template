@@ -16,10 +16,8 @@
 
 # 1. このリポジトリについて
 
-<font color="red" size="6"><b>工事中です。</b></font>
-
-自分用、開発スタート用にWebフレームワークをまとめたDocker Composeテンプレプロジェクトです。  
-各機能をインストールして起動するまでの手順をサポートすることが目的です。
+開発スタート用にWebフレームワークをまとめたDocker Composeテンプレプロジェクトです。  
+ツールをインストールして起動するまでの手順をサポートすることが目的です。
 
 ※ このプロジェクトでは、`.gitignore`にて`/src`ディレクトリを捕捉しないよう設定しています。（必要に応じて指定を削除します）
 
@@ -37,6 +35,9 @@
 cd script/init/
 ./create.services.sh
 ```
+
+`script/init/create.services`フォルダ内のスクリプトは、単体でも動作します。  
+Dockerサービス単体でプロジェクトファイルを作成したい場合は、単体で実行します。
 
 ## 1.3. コンテナ起動前の設定（初回のみ）
 
@@ -71,6 +72,9 @@ cd script/init/
 ./remove.services.sh
 ```
 
+`script/init/remove.services`フォルダ内のスクリプトは、単体でも動作します。  
+Dockerサービス単体でプロジェクトファイルを削除したい場合は、単体で実行します。
+
 # 2. Docker Composeサービス一覧
 
 ## 2.1. Web/プロキシ
@@ -96,6 +100,7 @@ cd script/init/
 | react-ts.client.apollo.app.frontend | [Apollo Client](https://www.apollographql.com/docs/react/) | [node](https://hub.docker.com/_/node) | [443](https://localhost) | [GraphQL](https://graphql.org/) |
 | ts.next.app.frontend | [Next.js](https://nextjs.org/) | [node](https://hub.docker.com/_/node) | [8010](https://localhost:8010) | [React](https://ja.react.dev/blog/2023/03/16/introducing-react-dev) |
 | ts.nuxt.app.frontend | [Nuxt.js](https://nuxt.com/) | [node](https://hub.docker.com/_/node) | [8020](https://localhost:8020) | [Vue.js](https://ja.vuejs.org/) |
+| kit.svelte.app.frontend | [SvelteKit](https://kit.svelte.jp/) | [node](https://hub.docker.com/_/node) | [8030](https://localhost:8030) | [Svelte](https://svelte.jp/) |
 
 ## 2.4. データベース
 
