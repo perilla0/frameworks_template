@@ -32,12 +32,9 @@
 バックエンド、フロントエンドのプロジェクトファイルをsrc配下に作成します。
 
 ```sh
-cd script/init/
-./create.services.sh
+cd script/docker/init/
+./services.create.sh
 ```
-
-`script/init/create.services`フォルダ内のスクリプトは、単体でも動作します。  
-Dockerサービス単体でプロジェクトファイルを作成したい場合は、単体で実行します。
 
 ## 1.3. コンテナ起動前の設定（初回のみ）
 
@@ -59,7 +56,7 @@ docker compose up
 ## 1.6. コンテナ削除
 
 ```sh
-cd script
+cd script/docker
 ./down_clear.sh
 ```
 
@@ -68,12 +65,9 @@ cd script
 プロジェクトファイルが存在するDockerサービスのコンテナイメージと、src直下のプロジェクトファイルを削除します。
 
 ```sh
-cd script/init/
-./remove.services.sh
+cd script/docker/init/
+./services.remove.sh
 ```
-
-`script/init/remove.services`フォルダ内のスクリプトは、単体でも動作します。  
-Dockerサービス単体でプロジェクトファイルを削除したい場合は、単体で実行します。
 
 # 2. Docker Composeサービス一覧
 
