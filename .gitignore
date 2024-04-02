@@ -3,7 +3,7 @@
 /services/django.app.backend/src
 /services/echo.app.backend/src
 
-/services/react-ts.client.apollo.app.frontend/src
+/services/ts.next.client.apollo.app.frontend/src
 /services/ts.next.app.frontend/src
 /services/ts.nuxt.app.frontend/src
 /services/kit.svelte.app.frontend/src
